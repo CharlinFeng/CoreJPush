@@ -82,6 +82,8 @@ HMSingletonM(CoreJPush)
 
 -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
     
+    [self handleBadge:[userInfo[@"aps"][@"badge"] integerValue]];
+    
     if(self.listenerM.count==0) return;
     
     [self.listenerM enumerateObjectsUsingBlock:^(id<CoreJPushProtocol> listener, NSUInteger idx, BOOL *stop) {
@@ -89,6 +91,20 @@ HMSingletonM(CoreJPush)
         if([listener respondsToSelector:@selector(didReceiveRemoteNotification:)]) [listener didReceiveRemoteNotification:userInfo];
     }];
 }
+
+
+
+/** 处理badge */
+-(void)handleBadge:(NSInteger)badge{
+    
+    NSInteger now = badge-1;
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    [UIApplication sharedApplication].applicationIconBadgeNumber=0;
+    [UIApplication sharedApplication].applicationIconBadgeNumber=now;
+    [APService setBadge:now];
+}
+
+
 
 
 
