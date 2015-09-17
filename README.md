@@ -25,7 +25,7 @@ CoreJPush （请收藏并持续关注[信息公告牌](https://github.com/Charli
 <br/><br/><br/>
 #### 二.光速集成
 
-#### 1.注册JPush
+#### 1.注册JPush（一句代码）
 请删除您的AppDelgate中所有有关推送的方法，因为CoreJPush内部已经封装。
 
     #import "CoreJPush.h"
