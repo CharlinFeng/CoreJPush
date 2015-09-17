@@ -15,6 +15,8 @@
 
 @property (nonatomic,strong) NSMutableArray *listenerM;
 
+@property (nonatomic,copy) void(^ResBlock)(BOOL res, NSSet *tags,NSString *alias);
+
 @end
 
 
@@ -88,7 +90,7 @@ HMSingletonM(CoreJPush)
     
     [self.listenerM enumerateObjectsUsingBlock:^(id<CoreJPushProtocol> listener, NSUInteger idx, BOOL *stop) {
         
-        if([listener respondsToSelector:@selector(didReceiveRemoteNotification:)]) [listener didReceiveRemoteNotification:userInfo];
+        if([listener respondsToSelector:@selector(didReceiveRemoteNotification:)]) [listener didReceiveRemoteNotification:userInfo[@"aps"][@"alert"]];
     }];
 }
 
@@ -106,6 +108,20 @@ HMSingletonM(CoreJPush)
 
 
 
++(void)setTags:(NSSet *)tags alias:(NSString *)alias resBlock:(void(^)(BOOL res, NSSet *tags,NSString *alias))resBlock{
+    
+    CoreJPush *jpush = [CoreJPush sharedCoreJPush];
+
+    [APService setTags:tags alias:alias callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:jpush];
+    
+    jpush.ResBlock=resBlock;
+}
+
+
+-(void)tagsAliasCallback:(int)iResCode tags:(NSSet *)tags alias:(NSString *)alias{
+
+    if(self.ResBlock != nil) self.ResBlock(iResCode==0,tags,alias);
+}
 
 
 @end

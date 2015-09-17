@@ -19,12 +19,15 @@ HMSingletonH(CoreJPush)
 +(void)registerJPush:(NSDictionary *)launchOptions;
 
 
-
 /** 添加监听者 */
 +(void)addJPushListener:(id<CoreJPushProtocol>)listener;
 
 /** 移除监听者 */
 +(void)removeJPushListener:(id<CoreJPushProtocol>)listener;
+
+
+/** 注册alias、tags */
++(void)setTags:(NSSet *)tags alias:(NSString *)alias resBlock:(void(^)(BOOL res, NSSet *tags,NSString *alias))resBlock;
 
 
 @end

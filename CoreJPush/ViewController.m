@@ -20,7 +20,16 @@
     
     [CoreJPush addJPushListener:self];
     
+    [CoreJPush setTags:[NSSet setWithArray:@[@"movie"]] alias:@"12343242" resBlock:^(BOOL res, NSSet *tags, NSString *alias) {
+        
+        NSLog(@"%@,%@,%@",@(res),tags,alias);
+        
+    }];
+    
+    
+    
 }
+
 
 -(void)dealloc{
     
