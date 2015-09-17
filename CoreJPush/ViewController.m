@@ -22,8 +22,11 @@
     
     [CoreJPush setTags:[NSSet setWithArray:@[@"movie"]] alias:@"12343242" resBlock:^(BOOL res, NSSet *tags, NSString *alias) {
         
-        NSLog(@"%@,%@,%@",@(res),tags,alias);
-        
+        if(res){
+            NSLog(@"设置成功：%@,%@",@(res),tags,alias);
+        }else{
+            NSLog(@"设置失败");
+        }
     }];
     
     
