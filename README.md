@@ -1,3 +1,7 @@
+#### 陆续增加以下功能：badge处理，Swift支持
+
+
+
 <br/>
 CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
