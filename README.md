@@ -1,7 +1,7 @@
 <br/>
 CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
-#### CoreJPush,让您三句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
+#### CoreJPush,让您四句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
 
 <br/>
 # 一.框架准备
@@ -30,7 +30,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
     [CoreJPush registerJPush:launchOptions];
     
 <br/><br/>
-#### 2.突破空间限制，在您任意想监听通知的页面，一句代码监听通知：
+#### 2.突破空间限制，在您任意想得到推送数据的地方，三句代码搞定：
 
       //添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
       [CoreJPush addJPushListener:self];
@@ -38,7 +38,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
       //当然，你需要在合适的地方（比如dealloc），移除监听者
       [CoreJPush removeJPushListener:self];
       
-      //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did，xcode会提示你如下方法：
+      //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did ，Xcode会提示你如下方法：
       -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
           
           NSLog(@"ViewController: %@",userInfo);
