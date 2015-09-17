@@ -3,10 +3,8 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 ==========
 #### CoreJPush,让您三句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
 
-
-
-<br/><br/><br/>
-#### 一.项目配置
+<br/>
+#### 一.框架准备
 <br/><br/>
 #### 1. 拖拽CoreJPush到您的项目中，并添加以下依赖框架
 >.CFNetwork.framework<br/>
@@ -37,6 +35,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 
       //添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
       [CoreJPush addJPushListener:self];
+      
       //当然，你需要在合适的地方（比如dealloc），移除监听者
       [CoreJPush removeJPushListener:self];
       
@@ -47,4 +46,5 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
           
       }
 
-### 完
+<br/><br/><br/>
+#### 三. 已经没有了，就这么简单：注册、添加监听，实现代理做事
