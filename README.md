@@ -32,13 +32,15 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 <br/><br/>
 #### 2.突破空间限制，在您任意想得到推送数据的地方，三句代码搞定：
 
-      //添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
+      //1.添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
       [CoreJPush addJPushListener:self];
       
-      //当然，你需要在合适的地方（比如dealloc），移除监听者
+      
+      //2.你需要在合适的地方（比如dealloc），移除监听者
       [CoreJPush removeJPushListener:self];
       
-      //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did ，Xcode会提示你如下方法：
+      
+      //3.您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did ，Xcode会提示你如下方法：
       -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
           NSLog(@"ViewController: %@",userInfo);
       }
