@@ -40,9 +40,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
       
       //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did ，Xcode会提示你如下方法：
       -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
-          
           NSLog(@"ViewController: %@",userInfo);
-          
       }
 
 <br/><br/><br/>
