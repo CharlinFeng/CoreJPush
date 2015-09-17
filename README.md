@@ -1,11 +1,8 @@
-#### 持续更新中，即将增加以下功能：badge处理，Swift支持，标签与别名
-
-
 
 <br/>
 CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
-#### CoreJPush,让您四句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
+#### CoreJPush,让您五句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
 
 <br/>
 # 一.框架准备
@@ -49,5 +46,27 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
           NSLog(@"ViewController: %@",userInfo);
       }
 
+
 <br/><br/><br/>
-## 三. 已经没有了，就这么简单：注册、添加监听，实现代理做事
+# 三. 定义标签与别名
+#### 注：标签与别名为覆盖操作，而非增量操作。传nil为本次设置值忽略，传""为清除操作。
+#### 请注意返回block的res值为设置结果，只有res = YES，才表示标签与别名操作成功。
+
+    [CoreJPush setTags:[NSSet setWithArray:@[@"movie"]] alias:@"12343242" resBlock:^(BOOL res, NSSet *tags, NSString *alias) {
+        
+        if(res){
+            NSLog(@"设置成功：%@,%@",@(res),tags,alias);
+        }else{
+            NSLog(@"设置失败");
+        }
+    }];
+
+
+<br/><br/><br/>
+# 四. Badge管理
+#### 框架内部已经完成封装，你无需管理。
+
+
+<br/><br/><br/>
+# 五. 系统通知栏提示信息管理
+#### 框架内部已经完成封装，你无需管理。
