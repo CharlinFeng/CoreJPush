@@ -5,7 +5,6 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 
 <br/>
 #### 一.框架准备
-<br/><br/>
 #### 1. 拖拽CoreJPush到您的项目中，并添加以下依赖框架
 >.CFNetwork.framework<br/>
 >.CoreFoundation.framework<br/>
