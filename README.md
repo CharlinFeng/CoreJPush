@@ -9,18 +9,18 @@ CoreJPush （请收藏并持续关注[信息公告牌](https://github.com/Charli
 #### 一.项目配置
 <br/><br/>
 #### 1. 拖拽CoreJPush到您的项目中，并添加以下依赖框架
->.CFNetwork.framework
->.CoreFoundation.framework
->.CoreTelephony.framework
->.SystemConfiguration.framework
->.Security.framework
->.libz.dylib
+>.CFNetwork.framework<br/>
+>.CoreFoundation.framework<br/>
+>.CoreTelephony.framework<br/>
+>.SystemConfiguration.framework<br/>
+>.Security.framework<br/>
+>.libz.dylib<br/>
 
 <br/><br/>
 #### 2. 项目配置
->. (1) Search Paths 下的 User Header Search Paths 和 Library Search Paths为`$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib`。
->. (2) 选中Project-Target-Capabilities-Background Modes,勾选Remote Notifications。
->. (3) 请修改CoreJPush框架内Common文件夹下PushConfig.plist的Appkey为您的Appkey。
+>. (1) Search Paths 下的 User Header Search Paths 和 Library Search Paths为`$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib`。<br/>
+>. (2) 选中Project-Target-Capabilities-Background Modes,勾选Remote Notifications。<br/>
+>. (3) 请修改CoreJPush框架内Common文件夹下PushConfig.plist的Appkey为您的Appkey。<br/>
 
 <br/><br/><br/>
 #### 二.光速集成
@@ -35,16 +35,16 @@ CoreJPush （请收藏并持续关注[信息公告牌](https://github.com/Charli
 <br/><br/>
 #### 2.突破空间限制，在您任意想监听通知的页面，一句代码监听通知：
 
-  //添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
-  [CoreJPush addJPushListener:self];
-  //当然，你需要在合适的地方（比如dealloc），移除监听者
-  [CoreJPush removeJPushListener:self];
-  
-  //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did，xcode会提示你如下方法：
-  -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
+      //添加一个监听者：此监听者是遵循了CoreJPushProtocol协议
+      [CoreJPush addJPushListener:self];
+      //当然，你需要在合适的地方（比如dealloc），移除监听者
+      [CoreJPush removeJPushListener:self];
       
-      NSLog(@"ViewController: %@",userInfo);
-      
-  }
+      //您已经遵循了CoreJPushProtocol协议，直接在.m文件里面敲did，xcode会提示你如下方法：
+      -(void)didReceiveRemoteNotification:(NSDictionary *)userInfo{
+          
+          NSLog(@"ViewController: %@",userInfo);
+          
+      }
 
 ### 完
