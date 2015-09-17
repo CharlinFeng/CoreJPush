@@ -4,7 +4,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 #### CoreJPush,让您三句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
 
 <br/>
-#### 一.框架准备
+# 一.框架准备
 #### 1. 拖拽CoreJPush到您的项目中，并添加以下依赖框架
 >.CFNetwork.framework<br/>
 >.CoreFoundation.framework<br/>
@@ -20,7 +20,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 >. (3) 请修改CoreJPush框架内Common文件夹下PushConfig.plist的Appkey为您的Appkey。<br/>
 
 <br/><br/><br/>
-#### 二.光速集成
+# 二.光速集成
 
 #### 1.注册JPush（一句代码）
 请删除您的AppDelgate中所有有关推送的方法，因为CoreJPush内部已经封装。
@@ -46,4 +46,4 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
       }
 
 <br/><br/><br/>
-#### 三. 已经没有了，就这么简单：注册、添加监听，实现代理做事
+## 三. 已经没有了，就这么简单：注册、添加监听，实现代理做事
