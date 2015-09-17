@@ -1,5 +1,5 @@
 <br/>
-CoreJPush （请收藏并持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
+CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)）
 ==========
 #### CoreJPush,让您三句代码立即搞定JPush，集成到使用只需要3分钟。没错，3分钟！
 
