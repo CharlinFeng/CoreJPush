@@ -70,3 +70,8 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 <br/><br/><br/>
 # 五. 系统通知栏提示信息管理
 #### 框架内部已经完成封装，你无需管理。
+
+
+<br/><br/><br/>
+# 六. Swift支持
+#### 支持Swift只需做一件事情，就是在框架的Common文件夹中的AppDelegate+JPush.h中引入YourAppName-Swift.h即可。
