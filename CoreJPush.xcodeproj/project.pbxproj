@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		89229F5F1C53329600201995 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89229F5E1C53329600201995 /* sound.caf */; };
-		89A459671C532CC900327914 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A459651C532CC900327914 /* jpush-ios-2.1.0.a */; };
 		89AA26BE1BAA6F3600B5B018 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */; };
 		89AA26BF1BAA6F3600B5B018 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89AA26BD1BAA6F3600B5B018 /* PushConfig.plist */; };
 		89C57EA71BAA4A6800F708E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EA61BAA4A6800F708E0 /* main.m */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		89229F5E1C53329600201995 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
-		89A459651C532CC900327914 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
 		89A459661C532CC900327914 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		89AA26BA1BAA6F3600B5B018 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A459671C532CC900327914 /* jpush-ios-2.1.0.a in Frameworks */,
 				89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */,
 				89C57ED81BAA5CDC00F708E0 /* Security.framework in Frameworks */,
 				89C57ED61BAA5CD000F708E0 /* SystemConfiguration.framework in Frameworks */,
@@ -97,7 +94,6 @@
 		89A459641C532CC900327914 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				89A459651C532CC900327914 /* jpush-ios-2.1.0.a */,
 				89A459661C532CC900327914 /* JPUSHService.h */,
 			);
 			path = Lib;
