@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate+JPush.h"
-#import "APService.h"
+#import "JPUSHService.h"
 #import "CoreJPush.h"
 
 @implementation AppDelegate (JPush)
@@ -16,19 +16,19 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
     // Required
-    [APService registerDeviceToken:deviceToken];
+    [JPUSHService registerDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     
-    // Required
-    [APService handleRemoteNotification:userInfo];
+    // Required,For systems with less than or equal to iOS6
+    [JPUSHService handleRemoteNotification:userInfo];
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
 
     // IOS 7 Support Required
-    [APService handleRemoteNotification:userInfo];
+    [JPUSHService handleRemoteNotification:userInfo];
     completionHandler(UIBackgroundFetchResultNewData);
     
     CoreJPush *jpush = [CoreJPush sharedCoreJPush];

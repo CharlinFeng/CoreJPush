@@ -7,9 +7,13 @@
 //
 
 #import "CoreJPush.h"
-#import "APService.h"
+#import "JPUSHService.h"
 #import <UIKit/UIKit.h>
 
+
+#define JPushAppKey @"da9152d6421af29ecf6f36aa"
+#define JPushChannel @"AppStore"
+#define JPushIsProduction NO
 
 @interface CoreJPush ()
 
@@ -31,20 +35,21 @@ HMSingletonM(CoreJPush)
     // Required
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
         //可以添加自定义categories
-        [APService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
-                                                       UIUserNotificationTypeSound |
-                                                       UIUserNotificationTypeAlert)
-                                           categories:nil];
+        [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+                                                          UIUserNotificationTypeSound |
+                                                          UIUserNotificationTypeAlert)
+                                              categories:nil];
     } else {
         //categories 必须为nil
-        [APService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
-                                                       UIRemoteNotificationTypeSound |
-                                                       UIRemoteNotificationTypeAlert)
-                                           categories:nil];
+        [JPUSHService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                          UIRemoteNotificationTypeSound |
+                                                          UIRemoteNotificationTypeAlert)
+                                              categories:nil];
     }
     
     // Required
-    [APService setupWithOption:launchOptions];
+    //如需兼容旧版本的方式，请依旧使用[JPUSHService setupWithOption:launchOptions]方式初始化和同时使用pushConfig.plist文件声明appKey等配置内容。
+    [JPUSHService setupWithOption:launchOptions appKey:JPushAppKey channel:JPushChannel apsForProduction:JPushIsProduction];
     
 }
 
@@ -90,7 +95,7 @@ HMSingletonM(CoreJPush)
     
     [self.listenerM enumerateObjectsUsingBlock:^(id<CoreJPushProtocol> listener, NSUInteger idx, BOOL *stop) {
         
-        if([listener respondsToSelector:@selector(didReceiveRemoteNotification:)]) [listener didReceiveRemoteNotification:userInfo[@"aps"][@"alert"]];
+        if([listener respondsToSelector:@selector(didReceiveRemoteNotification:)]) [listener didReceiveRemoteNotification:userInfo];
     }];
 }
 
@@ -103,7 +108,7 @@ HMSingletonM(CoreJPush)
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     [UIApplication sharedApplication].applicationIconBadgeNumber=0;
     [UIApplication sharedApplication].applicationIconBadgeNumber=now;
-    [APService setBadge:now];
+    [JPUSHService setBadge:now];
 }
 
 
@@ -112,7 +117,7 @@ HMSingletonM(CoreJPush)
     
     CoreJPush *jpush = [CoreJPush sharedCoreJPush];
 
-    [APService setTags:tags alias:alias callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:jpush];
+    [JPUSHService setTags:tags alias:alias callbackSelector:@selector(tagsAliasCallback:tags:alias:) object:jpush];
     
     jpush.ResBlock=resBlock;
 }

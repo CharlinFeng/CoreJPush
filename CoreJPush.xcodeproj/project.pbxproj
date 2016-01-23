@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89229F5F1C53329600201995 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89229F5E1C53329600201995 /* sound.caf */; };
+		89A459671C532CC900327914 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A459651C532CC900327914 /* jpush-ios-2.1.0.a */; };
 		89AA26BE1BAA6F3600B5B018 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */; };
 		89AA26BF1BAA6F3600B5B018 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89AA26BD1BAA6F3600B5B018 /* PushConfig.plist */; };
 		89C57EA71BAA4A6800F708E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EA61BAA4A6800F708E0 /* main.m */; };
@@ -16,7 +18,6 @@
 		89C57EB21BAA4A6800F708E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C57EB11BAA4A6800F708E0 /* Images.xcassets */; };
 		89C57EB51BAA4A6800F708E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C57EB31BAA4A6800F708E0 /* LaunchScreen.xib */; };
 		89C57EC11BAA4A6800F708E0 /* CoreJPushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EC01BAA4A6800F708E0 /* CoreJPushTests.m */; };
-		89C57ECE1BAA4B2E00F708E0 /* libPushSDK-1.8.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ECD1BAA4B2E00F708E0 /* libPushSDK-1.8.5.a */; };
 		89C57ED01BAA5CAA00F708E0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ECF1BAA5CAA00F708E0 /* CFNetwork.framework */; };
 		89C57ED21BAA5CB600F708E0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED11BAA5CB600F708E0 /* CoreFoundation.framework */; };
 		89C57ED41BAA5CC400F708E0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED31BAA5CC400F708E0 /* CoreTelephony.framework */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		89229F5E1C53329600201995 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
+		89A459651C532CC900327914 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
+		89A459661C532CC900327914 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		89AA26BA1BAA6F3600B5B018 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
 		89AA26BC1BAA6F3600B5B018 /* CoreJPushSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJPushSingleton.h; sourceTree = "<group>"; };
@@ -55,8 +59,6 @@
 		89C57EBA1BAA4A6800F708E0 /* CoreJPushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreJPushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C57EBF1BAA4A6800F708E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89C57EC01BAA4A6800F708E0 /* CoreJPushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreJPushTests.m; sourceTree = "<group>"; };
-		89C57ECC1BAA4B2E00F708E0 /* APService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APService.h; sourceTree = "<group>"; };
-		89C57ECD1BAA4B2E00F708E0 /* libPushSDK-1.8.5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPushSDK-1.8.5.a"; sourceTree = "<group>"; };
 		89C57ECF1BAA5CAA00F708E0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		89C57ED11BAA5CB600F708E0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		89C57ED31BAA5CC400F708E0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -72,13 +74,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A459671C532CC900327914 /* jpush-ios-2.1.0.a in Frameworks */,
 				89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */,
 				89C57ED81BAA5CDC00F708E0 /* Security.framework in Frameworks */,
 				89C57ED61BAA5CD000F708E0 /* SystemConfiguration.framework in Frameworks */,
 				89C57ED41BAA5CC400F708E0 /* CoreTelephony.framework in Frameworks */,
 				89C57ED21BAA5CB600F708E0 /* CoreFoundation.framework in Frameworks */,
 				89C57ED01BAA5CAA00F708E0 /* CFNetwork.framework in Frameworks */,
-				89C57ECE1BAA4B2E00F708E0 /* libPushSDK-1.8.5.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89A459641C532CC900327914 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				89A459651C532CC900327914 /* jpush-ios-2.1.0.a */,
+				89A459661C532CC900327914 /* JPUSHService.h */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		89AA26B91BAA6F3600B5B018 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +141,7 @@
 				89C57EA91BAA4A6800F708E0 /* AppDelegate.m */,
 				89C57EAB1BAA4A6800F708E0 /* ViewController.h */,
 				89C57EAC1BAA4A6800F708E0 /* ViewController.m */,
+				89229F5E1C53329600201995 /* sound.caf */,
 				89C57EAE1BAA4A6800F708E0 /* Main.storyboard */,
 				89C57EB11BAA4A6800F708E0 /* Images.xcassets */,
 				89C57EB31BAA4A6800F708E0 /* LaunchScreen.xib */,
@@ -173,21 +185,12 @@
 		89C57ECA1BAA4A8600F708E0 /* CoreJPush */ = {
 			isa = PBXGroup;
 			children = (
+				89A459641C532CC900327914 /* Lib */,
 				89AA26B91BAA6F3600B5B018 /* Common */,
-				89C57ECB1BAA4A8600F708E0 /* Lib */,
 				89C57EDD1BAA61FE00F708E0 /* CoreJPush.h */,
 				89C57EDE1BAA61FE00F708E0 /* CoreJPush.m */,
 			);
 			path = CoreJPush;
-			sourceTree = "<group>";
-		};
-		89C57ECB1BAA4A8600F708E0 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				89C57ECC1BAA4B2E00F708E0 /* APService.h */,
-				89C57ECD1BAA4B2E00F708E0 /* libPushSDK-1.8.5.a */,
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +242,7 @@
 				TargetAttributes = {
 					89C57EA01BAA4A6800F708E0 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = P2957GLTVA;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -278,6 +282,7 @@
 			files = (
 				89AA26BF1BAA6F3600B5B018 /* PushConfig.plist in Resources */,
 				89C57EB01BAA4A6800F708E0 /* Main.storyboard in Resources */,
+				89229F5F1C53329600201995 /* sound.caf in Resources */,
 				89C57EB51BAA4A6800F708E0 /* LaunchScreen.xib in Resources */,
 				89C57EB21BAA4A6800F708E0 /* Images.xcassets in Resources */,
 			);
@@ -360,8 +365,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Minze Lan (92NGCC8X49)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Minze Lan (92NGCC8X49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -383,7 +388,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "0c7886d2-f014-4e0d-b0fc-00768fe4618c";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -405,8 +410,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Minze Lan (92NGCC8X49)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Minze Lan (92NGCC8X49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -421,7 +426,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "0c7886d2-f014-4e0d-b0fc-00768fe4618c";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -432,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Minze Lan (92NGCC8X49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -446,7 +453,7 @@
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0c7886d2-f014-4e0d-b0fc-00768fe4618c";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 			};
 			name = Debug;
 		};
@@ -455,7 +462,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Minze Lan (92NGCC8X49)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -469,7 +478,7 @@
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0c7886d2-f014-4e0d-b0fc-00768fe4618c";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 			};
 			name = Release;
 		};
@@ -477,8 +486,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -490,7 +499,7 @@
 				INFOPLIST_FILE = CoreJPushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreJPush.app/CoreJPush";
 			};
 			name = Debug;
@@ -499,8 +508,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -508,7 +517,7 @@
 				INFOPLIST_FILE = CoreJPushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreJPush.app/CoreJPush";
 			};
 			name = Release;
