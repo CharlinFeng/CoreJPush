@@ -19,6 +19,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 >. (1) Search Paths 下的 User Header Search Paths 和 Library Search Paths为`$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib`。<br/>
 >. (2) 选中Project-Target-Capabilities-Background Modes,勾选Remote Notifications。<br/>
 >. (3) 请修改CoreJPush框架内Common文件夹下PushConfig.plist的Appkey为您的Appkey。<br/>
+>. (4) 如果你的工程需要支持小于7.0的iOS系统，请到Build Settings 关闭 bitCode 选项，否则将无法正常编译通过。
 
 <br/><br/><br/>
 # 二.光速集成
