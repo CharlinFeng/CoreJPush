@@ -12,7 +12,7 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 >.CoreTelephony.framework<br/>
 >.SystemConfiguration.framework<br/>
 >.Security.framework<br/>
->.libz.dylib<br/>
+>. libz.tbd <br/>
 
 <br/><br/>
 #### 2. 项目配置
