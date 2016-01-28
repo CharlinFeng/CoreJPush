@@ -10,7 +10,7 @@
 #import "AppDelegate+JPush.h"
 #import "CoreJPushSingleton.h"
 #import "CoreJPushProtocol.h"
-
+#import "JPUSHService.h"
 @interface CoreJPush : NSObject<CoreJPushProtocol>
 HMSingletonH(CoreJPush)
 
