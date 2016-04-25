@@ -25,7 +25,7 @@
 		89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED91BAA5CE300F708E0 /* libz.dylib */; };
 		89C57EDF1BAA61FE00F708E0 /* CoreJPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EDE1BAA61FE00F708E0 /* CoreJPush.m */; };
 		89FAC4201C59FD77002336F1 /* AppDelegate+JPush+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC41F1C59FD77002336F1 /* AppDelegate+JPush+Swift.swift */; };
-		89FAC4221C59FDC5002336F1 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */; };
+		9F16666D1CCDFF040084E354 /* jpush-ios-2.1.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		89229F5E1C53329600201995 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
-		89A459661C532CC900327914 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		89AA26BA1BAA6F3600B5B018 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
 		89AA26BC1BAA6F3600B5B018 /* CoreJPushSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJPushSingleton.h; sourceTree = "<group>"; };
@@ -68,8 +67,9 @@
 		89C57EDD1BAA61FE00F708E0 /* CoreJPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJPush.h; sourceTree = "<group>"; };
 		89C57EDE1BAA61FE00F708E0 /* CoreJPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreJPush.m; sourceTree = "<group>"; };
 		89FAC41F1C59FD77002336F1 /* AppDelegate+JPush+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+JPush+Swift.swift"; sourceTree = "<group>"; };
-		89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
 		89FAC4231C59FE6C002336F1 /* oc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc.h; sourceTree = "<group>"; };
+		9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.6.a"; sourceTree = "<group>"; };
+		9F16666C1CCDFF040084E354 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89FAC4221C59FDC5002336F1 /* jpush-ios-2.1.0.a in Frameworks */,
 				89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */,
+				9F16666D1CCDFF040084E354 /* jpush-ios-2.1.6.a in Frameworks */,
 				89C57ED81BAA5CDC00F708E0 /* Security.framework in Frameworks */,
 				89C57ED61BAA5CD000F708E0 /* SystemConfiguration.framework in Frameworks */,
 				89C57ED41BAA5CC400F708E0 /* CoreTelephony.framework in Frameworks */,
@@ -100,8 +100,8 @@
 		89A459641C532CC900327914 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */,
-				89A459661C532CC900327914 /* JPUSHService.h */,
+				9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */,
+				9F16666C1CCDFF040084E354 /* JPUSHService.h */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
