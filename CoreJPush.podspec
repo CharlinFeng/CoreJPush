@@ -63,10 +63,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/TedLiuHome/CoreJPush.git", :tag => s.version.to_s, :commit => "0f50f64528a49085a9bcf67642bae1b61cff60da" }
+  s.source       = { :git => "https://github.com/TedLiuHome/CoreJPush.git", :tag => s.version.to_s, :commit => "2cafbfc44c0d761c6c4b7dee528957b7e597fb8a" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -121,6 +121,8 @@ Pod::Spec.new do |s|
   s.library   = "z"
   # s.libraries = "iconv", "xml2"
   s.ios.vendored_library = 'CoreJPush/CoreJPush/Lib/jpush-ios-2.1.6.a'
+  
+  s.default_subspecs = 'Core', 'UI'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
