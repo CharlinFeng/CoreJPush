@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		89229F5F1C53329600201995 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 89229F5E1C53329600201995 /* sound.caf */; };
 		89AA26BE1BAA6F3600B5B018 /* AppDelegate+JPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */; };
-		89AA26BF1BAA6F3600B5B018 /* PushConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89AA26BD1BAA6F3600B5B018 /* PushConfig.plist */; };
 		89C57EA71BAA4A6800F708E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EA61BAA4A6800F708E0 /* main.m */; };
 		89C57EAA1BAA4A6800F708E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EA91BAA4A6800F708E0 /* AppDelegate.m */; };
 		89C57EAD1BAA4A6800F708E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EAC1BAA4A6800F708E0 /* ViewController.m */; };
@@ -22,10 +21,9 @@
 		89C57ED41BAA5CC400F708E0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED31BAA5CC400F708E0 /* CoreTelephony.framework */; };
 		89C57ED61BAA5CD000F708E0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED51BAA5CD000F708E0 /* SystemConfiguration.framework */; };
 		89C57ED81BAA5CDC00F708E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED71BAA5CDC00F708E0 /* Security.framework */; };
-		89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C57ED91BAA5CE300F708E0 /* libz.dylib */; };
 		89C57EDF1BAA61FE00F708E0 /* CoreJPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C57EDE1BAA61FE00F708E0 /* CoreJPush.m */; };
-		89FAC4201C59FD77002336F1 /* AppDelegate+JPush+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC41F1C59FD77002336F1 /* AppDelegate+JPush+Swift.swift */; };
-		89FAC4221C59FDC5002336F1 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */; };
+		9F16666D1CCDFF040084E354 /* jpush-ios-2.1.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */; };
+		9FBE90DD1CCE07B700276897 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE90DC1CCE07B700276897 /* libz.1.2.5.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +38,9 @@
 
 /* Begin PBXFileReference section */
 		89229F5E1C53329600201995 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
-		89A459661C532CC900327914 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		89AA26BA1BAA6F3600B5B018 /* AppDelegate+JPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+JPush.h"; sourceTree = "<group>"; };
 		89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+JPush.m"; sourceTree = "<group>"; };
 		89AA26BC1BAA6F3600B5B018 /* CoreJPushSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJPushSingleton.h; sourceTree = "<group>"; };
-		89AA26BD1BAA6F3600B5B018 /* PushConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PushConfig.plist; sourceTree = "<group>"; };
 		89AA26C01BAA6F8200B5B018 /* CoreJPushProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreJPushProtocol.h; sourceTree = "<group>"; };
 		89C57EA11BAA4A6800F708E0 /* CoreJPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreJPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C57EA51BAA4A6800F708E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,12 +60,12 @@
 		89C57ED31BAA5CC400F708E0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		89C57ED51BAA5CD000F708E0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		89C57ED71BAA5CDC00F708E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		89C57ED91BAA5CE300F708E0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		89C57EDD1BAA61FE00F708E0 /* CoreJPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreJPush.h; sourceTree = "<group>"; };
 		89C57EDE1BAA61FE00F708E0 /* CoreJPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreJPush.m; sourceTree = "<group>"; };
-		89FAC41F1C59FD77002336F1 /* AppDelegate+JPush+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+JPush+Swift.swift"; sourceTree = "<group>"; };
-		89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
 		89FAC4231C59FE6C002336F1 /* oc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oc.h; sourceTree = "<group>"; };
+		9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.6.a"; sourceTree = "<group>"; };
+		9F16666C1CCDFF040084E354 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		9FBE90DC1CCE07B700276897 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89FAC4221C59FDC5002336F1 /* jpush-ios-2.1.0.a in Frameworks */,
-				89C57EDA1BAA5CE300F708E0 /* libz.dylib in Frameworks */,
+				9FBE90DD1CCE07B700276897 /* libz.1.2.5.tbd in Frameworks */,
+				9F16666D1CCDFF040084E354 /* jpush-ios-2.1.6.a in Frameworks */,
 				89C57ED81BAA5CDC00F708E0 /* Security.framework in Frameworks */,
 				89C57ED61BAA5CD000F708E0 /* SystemConfiguration.framework in Frameworks */,
 				89C57ED41BAA5CC400F708E0 /* CoreTelephony.framework in Frameworks */,
@@ -100,8 +96,8 @@
 		89A459641C532CC900327914 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				89FAC4211C59FDC5002336F1 /* jpush-ios-2.1.0.a */,
-				89A459661C532CC900327914 /* JPUSHService.h */,
+				9F16666B1CCDFF040084E354 /* jpush-ios-2.1.6.a */,
+				9F16666C1CCDFF040084E354 /* JPUSHService.h */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -112,9 +108,7 @@
 				89AA26BA1BAA6F3600B5B018 /* AppDelegate+JPush.h */,
 				89AA26BB1BAA6F3600B5B018 /* AppDelegate+JPush.m */,
 				89AA26BC1BAA6F3600B5B018 /* CoreJPushSingleton.h */,
-				89AA26BD1BAA6F3600B5B018 /* PushConfig.plist */,
 				89AA26C01BAA6F8200B5B018 /* CoreJPushProtocol.h */,
-				89FAC41F1C59FD77002336F1 /* AppDelegate+JPush+Swift.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -157,7 +151,7 @@
 		89C57EA41BAA4A6800F708E0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				89C57ED91BAA5CE300F708E0 /* libz.dylib */,
+				9FBE90DC1CCE07B700276897 /* libz.1.2.5.tbd */,
 				89C57ED71BAA5CDC00F708E0 /* Security.framework */,
 				89C57ED51BAA5CD000F708E0 /* SystemConfiguration.framework */,
 				89C57ED31BAA5CC400F708E0 /* CoreTelephony.framework */,
@@ -243,12 +237,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "冯成林";
 				TargetAttributes = {
 					89C57EA01BAA4A6800F708E0 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = P2957GLTVA;
+						DevelopmentTeam = 27P55QDC67;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -286,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AA26BF1BAA6F3600B5B018 /* PushConfig.plist in Resources */,
 				89C57EB01BAA4A6800F708E0 /* Main.storyboard in Resources */,
 				89229F5F1C53329600201995 /* sound.caf in Resources */,
 				89C57EB51BAA4A6800F708E0 /* LaunchScreen.xib in Resources */,
@@ -311,7 +304,6 @@
 				89C57EAD1BAA4A6800F708E0 /* ViewController.m in Sources */,
 				89C57EDF1BAA61FE00F708E0 /* CoreJPush.m in Sources */,
 				89C57EAA1BAA4A6800F708E0 /* AppDelegate.m in Sources */,
-				89FAC4201C59FD77002336F1 /* AppDelegate+JPush+Swift.swift in Sources */,
 				89C57EA71BAA4A6800F708E0 /* main.m in Sources */,
 				89AA26BE1BAA6F3600B5B018 /* AppDelegate+JPush.m in Sources */,
 			);
@@ -377,6 +369,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -392,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
@@ -431,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				SDKROOT = iphoneos;
@@ -445,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -454,14 +447,15 @@
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
 				INFOPLIST_FILE = CoreJPush/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShiDian.Yeah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
+				PROVISIONING_PROFILE = "40bb375d-88f8-442c-af2e-82c8c0ca15f9";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/Charlin/Documents/ShiDian/Github/CoreJPush/CoreJPush/oc.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -473,7 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chenglin Feng (VDH9H497CN)";
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
@@ -482,14 +476,15 @@
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
 				INFOPLIST_FILE = CoreJPush/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CoreJPush/CoreJPush/Lib",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShiDian.Yeah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
+				PROVISIONING_PROFILE = "40bb375d-88f8-442c-af2e-82c8c0ca15f9";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/Charlin/Documents/ShiDian/Github/CoreJPush/CoreJPush/oc.h;
 			};
 			name = Release;
@@ -510,6 +505,7 @@
 				);
 				INFOPLIST_FILE = CoreJPushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShiDian.Yeah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreJPush.app/CoreJPush";
@@ -528,6 +524,7 @@
 				);
 				INFOPLIST_FILE = CoreJPushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShiDian.Yeah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "afa5c3c3-3752-4bf7-aa46-5b925611a861";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreJPush.app/CoreJPush";
