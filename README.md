@@ -7,12 +7,14 @@ CoreJPush （持续关注[信息公告牌](https://github.com/CharlinFeng/Show)�
 <br/>
 # 一.框架准备
 #### 1. 拖拽CoreJPush到您的项目中，并添加以下依赖框架
->.CFNetwork.framework<br/>
->.CoreFoundation.framework<br/>
->.CoreTelephony.framework<br/>
->.SystemConfiguration.framework<br/>
->.Security.framework<br/>
->. libz.tbd <br/>
+
+        >.CFNetwork.framework<br/>
+        >.CoreFoundation.framework<br/>
+        >.CoreTelephony.framework<br/>
+        >.SystemConfiguration.framework<br/>
+        >.Security.framework<br/>
+        >. libz.tbd <br/>
+        >. libresolv.tbd <br/>
 
 <br/><br/>
 #### 2. 项目配置
